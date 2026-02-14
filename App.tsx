@@ -1,6 +1,7 @@
 import React from 'react'
 import { CARD_DATA } from './constants'
 import Card from './components/Card'
+import { CircleNotchIcon } from '@phosphor-icons/react/dist/ssr'
 
 const App: React.FC = () => {
   return (
@@ -36,19 +37,15 @@ const App: React.FC = () => {
         </div>
 
         {/* Footer Branding */}
-        <footer className="text-center mt-36 flex flex-col items-center space-y-6 opacity-20 hover:opacity-100 transition-all duration-1000 group cursor-default">
-          <div className="flex items-center space-x-6 text-4xl md:text-6xl font-black tracking-tighter">
+        <footer className="text-center mt-36 flex flex-col items-center space-y-6 opacity-20 hover:opacity-60 transition-all duration-1000 group cursor-default">
+          <div className="flex items-center space-x-6 text-3xl md:text-5xl font-semibold tracking-tighter">
             <span>TMG</span>
-            <span className="text-brand-gold group-hover:scale-150 group-hover:rotate-[360deg] transition-all duration-1000 inline-block">
-              <svg
-                viewBox="0 0 256 256"
-                width="26"
-                height="26"
-                fill="#ffffff"
-                className="w-10 h-10 md:w-12 md:h-12 rotate-45"
-              >
-                <path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z" />
-              </svg>
+            <span className="text-brand-gold group-hover:scale-125 group-hover:rotate-[360deg] transition-all duration-1000 inline-block">
+              <CircleNotchIcon
+                size={26}
+                weight="thin"
+                className="w-10 h-10 md:w-12 md:h-12 -rotate-0.1 animate-spin"
+              />
             </span>
             <span>MARKETING</span>
           </div>
@@ -57,7 +54,6 @@ const App: React.FC = () => {
           </p>
         </footer>
       </main>
-
       {/* Aesthetic Accents */}
       <div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[120%] h-[1000px] bg-blue-600/5 blur-[250px] pointer-events-none -z-10 rounded-full"></div>
       <div className="fixed bottom-[-15%] right-[-15%] w-[50vw] h-[50vw] bg-blue-500/5 blur-[200px] pointer-events-none -z-10 rounded-full"></div>
