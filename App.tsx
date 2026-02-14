@@ -9,7 +9,7 @@ const App: React.FC = () => {
         {/* Header Section */}
         <header className="flex flex-col items-center mb-20 md:mb-32 space-y-8 animate-fade-in">
           <div className="animate-float">
-            <img src="/assets/tmglogo.png" alt="Logo" className="w-16 h-16" />
+            <img src="/images/tmglogo.png" alt="Logo" className="w-16 h-16" />
           </div>
           <div className="text-center space-y-3 px-4">
             <h1 className="text-[10px] text-xs md:text-lg font-black tracking-[0.8em] text-brand-gold uppercase ml-[0.8em] opacity-80">
