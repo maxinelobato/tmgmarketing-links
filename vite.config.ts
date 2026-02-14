@@ -11,21 +11,10 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       host: '0.0.0.0',
     },
-    plugins: [
-      react(),
-      createHtmlPlugin({
-        minify: true,
-        inject: {
-          data: {
-            // Inject the GTM ID from the environment variable
-            gtmId: env.VITE_GTM_ID,
-          },
-        },
-      }),
-    ],
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      'process.env.VITE_GTM_ID': JSON.stringify(env.VITE_GTM_ID),
     },
     resolve: {
       alias: {
